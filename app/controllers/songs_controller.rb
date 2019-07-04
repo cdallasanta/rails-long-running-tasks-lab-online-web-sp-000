@@ -47,6 +47,7 @@ class SongsController < ApplicationController
   end
 
   def upload
+    binding.pry
     CSV.foreach(params[:file].path, headers: true) do |song|
       new_song = Song.new
       new_song.title = song[0]
