@@ -2304,3 +2304,7 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 184ms (Views: 180.5ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/upload" for 76.121.63.6 at 2019-07-04 20:26:31 +0000
+Cannot render console from 76.121.63.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GU5zU8yDqGldlynDzpBfPGGi50hiNlTPdCv5ZlHBtuAWAe2T5LBNdA3RO6XlGpKez5f9IeBb4Ez60KEMk0/uoA==", "file"=>"songs.csv", "commit"=>"Import Songs"}
