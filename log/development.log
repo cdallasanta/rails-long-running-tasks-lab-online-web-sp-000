@@ -2295,3 +2295,12 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/songs" for 76.121.63.6 at 2019-07-04 20:26:00 +0000
+Cannot render console from 76.121.63.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered songs/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 184ms (Views: 180.5ms | ActiveRecord: 0.3ms)
+
+
