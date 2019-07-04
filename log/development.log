@@ -2308,3 +2308,19 @@ Started POST "/upload" for 76.121.63.6 at 2019-07-04 20:26:31 +0000
 Cannot render console from 76.121.63.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SongsController#upload as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"GU5zU8yDqGldlynDzpBfPGGi50hiNlTPdCv5ZlHBtuAWAe2T5LBNdA3RO6XlGpKez5f9IeBb4Ez60KEMk0/uoA==", "file"=>"songs.csv", "commit"=>"Import Songs"}
+Completed 500 Internal Server Error in 5167ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `path' for "songs.csv":String
+Did you mean?  pathmap):
+  
+app/controllers/songs_controller.rb:51:in `upload'
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.0ms)
